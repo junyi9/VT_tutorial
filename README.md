@@ -3,11 +3,11 @@
 #### Version: 1.1
 #### Last updated: 2024-09-19
 
-2024-06-26: An update on the ASM deployment (ASM.py) for version 1.1 is scheduled for September 2024.
-
 ## Overview
 
 VT-tools is an analytics toolbox for transforming large amounts of imperfect vehicle trajectory data into high-resolution spatiotemporal speed fields and generating virtual trajectories through these speed fields. Virtual trajectories have the advantage of being strongly based in empirical data, while containing no consistency imperfections and being generally smooth. These hypothetical trajectories can also be compared more readily, since they can be spawned at specific times and sampling rates.
+
+This is the version used for the Vanderbilt class CE 4510/5510 Transportation Engineering in Fall 2024.
 
 ## Use agreement
 
@@ -58,6 +58,9 @@ VT-tools can be run as stand-alone code or imported as a library for part of you
 - Supporting Python libraries: Pandas, Numpy, Matplotlib, ijson, tqdm, Jupyter-lab (optional, for opening Python notebooks)
 - A `requirements.txt` file is provided for creating a new Python environment for VT-tools if you wish. This is the officially supported method for running VT-tools, since the code was validated on this exact set of dependency versions. The process for creating a new environment is below.
 
+## Data access for this tutorial
+You will need to download the data file from i24motion.org/data using your account credentials.
+The data used in this tutorial is in `I24MOTION_PUBLIC_v1.0/trajectory_data_by_date/11-22-2022/data_demo`
 
 ## Clean installation
 
@@ -67,3 +70,13 @@ Starting with a clean Python environment (i.e., through Conda or venv) with the 
 - Activate the new environment (substitute "vt-tools for your own name if you altered it): `conda activate vt-tools`. 
 - Change directory to the VT-tools location: `cd [PATH_TO_VT_TOOLS]`.
 - Install Python library dependencies: `pip install -r requirements.txt`.
+
+
+## Changelog
+### v1.1
+- Adaptive smoothing method updated to use a matrix-based approach for speed field smoothing.
+- Fixed bug for the adaptive smoothing kernel.
+
+## Acknowledgements
+- This is a simplified code version from https://github.com/I24-MOTION/VT_tools with the purpose of tutorial for CE 4510/5510 Transportation Engineering at Vanderbilt University.
+- We would also like to thank the GitHub user seungwooham to his suggestions on the matrix operation for speed field smoothing.

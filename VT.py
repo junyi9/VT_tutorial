@@ -34,7 +34,7 @@ def gen_VT_k(smooth_speed, k = 1):
     smooth.columns = ['t', 'x', 'speed']
     smooth_vt = smooth.copy()
     smooth_vt['x'] = 63 - smooth_vt['x']
-    vt = pd.DataFrame(gen_VT(0, k, smooth_vt))
+    vt = pd.DataFrame(gen_VT(30*k, k, smooth_vt))
     vt.columns = ['time', 'space', 'speed', 'v_id']
     vt['space'] = 63 - vt['space']
     return vt

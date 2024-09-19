@@ -3,7 +3,7 @@ import ijson
 import pandas as pd
 import datetime
 import pytz
-
+from tqdm import tqdm
 
 def convert_to_cst_unix(date_string):
     """
@@ -114,7 +114,7 @@ def get_speed_mean_field(input_filename, dx, dt, starttime, endtime, lane_number
     with open(input_filename, 'r') as input_file:
         # Create an ijson parser for items in the input file
         parser = ijson.items(input_file, 'item')
-        for doc in parser:
+        for doc in tqdm(parser):
             if ((float(doc['last_timestamp']) >= starttime)
                     & (float(doc['first_timestamp']) <= endtime)
                     & (int(doc['direction']) == -1)
