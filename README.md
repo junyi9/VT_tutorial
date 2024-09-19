@@ -1,7 +1,7 @@
-# VT-tools
-### I-24 MOTION analytics code for speed field and virtual trajectory computation
+# VT-tutorial
+### Tutorial for I-24 MOTION analytics code for speed field and virtual trajectory computation
 #### Version: 1.1
-#### Last updated: 2024-09-14
+#### Last updated: 2024-09-19
 
 2024-06-26: An update on the ASM deployment (ASM.py) for version 1.1 is scheduled for September 2024.
 
