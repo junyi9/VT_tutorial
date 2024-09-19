@@ -59,7 +59,7 @@ VT-tools can be run as stand-alone code or imported as a library for part of you
 - A `requirements.txt` file is provided for creating a new Python environment for VT-tools if you wish. This is the officially supported method for running VT-tools, since the code was validated on this exact set of dependency versions. The process for creating a new environment is below.
 
 ## Data access for this tutorial
-You will need to download the data file from i24motion.org/data using your account credentials.
+You will need to download the data file from [i24motion.org/data](https://i24motion.org/data) using your account credentials.
 The data used in this tutorial is in `I24MOTION_PUBLIC_v1.0/trajectory_data_by_date/11-22-2022/data_demo`
 
 ## Clean installation
