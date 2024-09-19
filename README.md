@@ -5,7 +5,7 @@
 
 ## Overview
 
-VT-tools is an analytics toolbox for transforming large amounts of imperfect vehicle trajectory data into high-resolution spatiotemporal speed fields and generating virtual trajectories through these speed fields. Virtual trajectories have the advantage of being strongly based in empirical data, while containing no consistency imperfections and being generally smooth. These hypothetical trajectories can also be compared more readily, since they can be spawned at specific times and sampling rates.
+VT-tutorial is an analytics toolbox for transforming large amounts of imperfect vehicle trajectory data into high-resolution spatio-temporal speed fields and generating virtual trajectories through these speed fields. Virtual trajectories have the advantage of being strongly based in empirical data, while containing no consistency imperfections and being generally smooth. These hypothetical trajectories can also be compared more readily, since they can be spawned at specific times and sampling rates.
 
 This is the version used for the Vanderbilt class CE 4510/5510 Transportation Engineering in Fall 2024.
 
